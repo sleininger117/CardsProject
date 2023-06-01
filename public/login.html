@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards: Sharing made easy</title>
+    </head>
+    <body>
+        <div>
+            <h3>Cards</h3>
+        </div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="uname" placeholder="username...">
+        <label for="password">Password</label>
+        <input type="text" id="password" name="pword" placeholder="password...">
+        <button id="login" onclick="toHome()">Login</button> 
+        <button id="createAccount" onclick="toHome()">Create Account</button>
+    </body>
+    <script>
+        //Javascript for the page goes here, I will add it later.
+        //Important: This should be all the basic elements, though I recommend replacing the cards h3 object with a logo we design really fast if anyone can. 
+        function toHome() {
+            window.location.replace("http://127.0.0.1:3000/home");
+        }
+    </script>
+</html>
