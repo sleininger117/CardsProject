@@ -1,3 +1,13 @@
-.favorites {
+#favorites {
     width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#favorites .card {
+    width: 85%;
+    margin-bottom: 10px;
+    background-color: blue;
 }

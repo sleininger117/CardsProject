@@ -48,13 +48,13 @@
                     </div>
                 </main>
                 <nav>
-                    <div>
+                    <div onclick="toContacts()">
                         Contacts
                     </div>
-                    <div>
+                    <div onclick="toHome()">
                         Home
                     </div>
-                    <div>
+                    <div onclick="toCards()">
                         My Cards
                     </div>
                 </nav>
@@ -65,5 +65,14 @@
         //Javascript for the page goes here, I will add it later.
         //Important: Account and notifications should be replaced with SVGs, also Star icon (filled in btw)
             // place pngs in images folder, reference as I did for gmail
+        function toContacts() {
+            window.location.href = "http://127.0.0.1:3000/contacts";
+        }
+        function toHome() {
+            window.location.href = "http://127.0.0.1:3000/home";
+        }
+        function toCards() {
+            window.location.href = "http://127.0.0.1:3000/cards";
+        }
     </script>
 </html>
