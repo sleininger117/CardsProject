@@ -3,16 +3,32 @@
     <head>
         <title>Cards: Sharing made easy</title>
     </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="cards.css">
     <body>
-        <div>
+    <div class="smartphone">
+    <div class="content">
+        <div class="logoText">
             <h3>Cards</h3>
         </div>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="uname" placeholder="username...">
-        <label for="password">Password</label>
-        <input type="text" id="password" name="pword" placeholder="password...">
-        <button id="login" onclick="toHome()">Login</button> 
-        <button id="createAccount" onclick="toHome()">Create Account</button>
+        
+        <div class="loginFields">
+      		<label for="username">Username</label>
+       	 	<input type="text" id="username" name="uname" placeholder="username...">
+       	 	<br>
+        	<label for="password">Password</label>
+       	 	<input type="text" id="password" name="pword" placeholder="password...">
+    	</div>
+
+    	<div class="signIn">
+        	<button id="login" onclick="toHome()">Login</button> 
+        </div>
+
+        <div class="signUp">
+        	<button id="createAccount" onclick="toHome()">Create Account</button>
+ 	    </div>
+ 	</div>
+ 	</div>
     </body>
     <script>
         //Javascript for the page goes here, I will add it later.
