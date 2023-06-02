@@ -1,0 +1,80 @@
+/* The css below is used to simulate what the content would look like on an actual phone */
+/* This is universal, and should be applied to every html page.*/
+/* To do so, add a div with class "smartphone", and within that div add another div with class "content".*/
+/* Put all html code within both of those divs to create the effect */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 65px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: #E4F5FF;
+}
+
+.logoText{
+  background-color: #E4F5FF;
+  color: #6f7180;
+  text-align: center;
+}
+
+.loginFields {
+  align-content: center;
+  text-align: center;
+}
+
+.loginFields label {
+  display: flex;
+  margin: 10px 25px;
+}
+
+.loginFields input {
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+  background-color: #E4F5FF;
+}
+
+.signIn{
+
+}
+
+.signIn button {
+  width: 252px;
+  color: white;
+  border: none;
+  background: red;
+    align-content: center;
+}
+
+.signUp button {
+  width: 252px;
+  color: white;
+  border: none;
+  background: red;
+}
