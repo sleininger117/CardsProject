@@ -2,6 +2,11 @@
 /* This is universal, and should be applied to every html page.*/
 /* To do so, add a div with class "smartphone", and within that div add another div with class "content".*/
 /* Put all html code within both of those divs to create the effect */
+:root{
+  margin: 0;
+  padding: 0;
+}
+
 .smartphone {
   position: relative;
   width: 360px;
@@ -32,6 +37,11 @@
   width: 360px;
   height: 640px;
   background: #E4F5FF;
+  padding-top: 4px;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
 }
 
 .logoText{
@@ -40,9 +50,15 @@
   text-align: center;
 }
 
+.logoText h3{
+  margin-top: 0;
+}
+
 .loginFields {
   align-content: center;
   text-align: center;
+  margin-top: 40%;
+  width: 100%;
 }
 
 .loginFields label {
@@ -60,16 +76,13 @@
   background-color: #E4F5FF;
 }
 
-.signIn{
-
-}
-
 .signIn button {
   width: 252px;
   color: white;
   border: none;
   background: red;
-    align-content: center;
+  align-content: center;
+  margin-top: 15%;
 }
 
 .signUp button {
@@ -77,4 +90,9 @@
   color: white;
   border: none;
   background: red;
+}
+
+.signUp{
+  margin-top: auto;
+  margin-bottom: 10%;
 }
