@@ -1,7 +1,7 @@
 .content nav{
     margin-top: auto;
     height: 10%;
-    background-color: aqua;
+    background-color: #7289DA;
     width: 100%;
     display: flex;
     align-items: center;
@@ -13,6 +13,9 @@ nav div{
     align-items: center;
     align-content: center;
     text-align: center;
+}
+
+nav div:not(:first-child) {
     border-left: 1px;
     border-top: 0;
     border-right: 0;

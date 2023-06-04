@@ -36,7 +36,7 @@
 .smartphone .content {
   width: 360px;
   height: 640px;
-  background: #E4F5FF;
+  background: #f0f0f0;
   padding-top: 4px;
   display: flex;
   flex-flow: column;
@@ -115,4 +115,30 @@
 .card .description{
   font-size: small;
   font-weight: normal;
+}
+
+.starWrapper {
+  position: relative;
+  right: -85%;
+  top: -100%;
+  width: 0;
+  height: 0;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.logos img{
+  margin-left: 3px;
+}
+
+.pastelBlue {
+  background-color: #B5E9FF;
+}
+
+.pastelGreen{
+  background-color: #CDFFD5;
 }
