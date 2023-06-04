@@ -1,6 +1,8 @@
 #accountNotif {
     display: flex;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-right: 10px;
+    align-items: center;
+    height: 7%;
 }

@@ -1,13 +1,22 @@
 #favorites {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-flow: column;
     align-items: center;
     overflow-y: scroll;
+    height: 83%;
 }
 
 #favorites .card {
     width: 85%;
     margin-bottom: 10px;
     background-color: blue;
+}
+
+.starWrapper {
+    position: relative;
+    right: -85%;
+    top: -100%;
+    width: 0;
+    height: 0;
 }
