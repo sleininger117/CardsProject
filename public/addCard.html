@@ -34,14 +34,14 @@
                     </div>
                     <div class="edit">
                         <label for="name">Card Name</label>
-                        <input type="text" id="name" name="name" placeholder="Card Name">
+                        <input type="text" id="name" name="name" placeholder="Card Name" onkeyup="updateName(this)">
                     </div>
                     <div class="edit">
                         <label for="description">Card Description</label>
-                        <input type="text" id="description" name="description" placeholder="Card Description">
+                        <input type="text" id="description" name="description" placeholder="Card Description" onkeyup="updateDescription(this)">
                     </div>
                     <div class="select">
-
+                        <label for="logoSelect">Add Your Contacts</label>
                     </div>
                 </main>
                 
@@ -51,5 +51,11 @@
     <script>
         //Javascript for the page goes here, I will add it later.
         //Important: Account and notifications should be replaced with SVGs, also Star icon (filled in btw)
+        function updateName(elm) {
+            document.querySelector(".name").textContent = elm.value;
+        }
+        function updateDescription(elm) {
+            document.querySelector(".description").textContent = elm.value;
+        }
     </script>
 </html>
