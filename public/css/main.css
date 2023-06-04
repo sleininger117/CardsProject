@@ -103,10 +103,11 @@
   margin-bottom: 10px;
   background-color: blue;
   border-radius: 10px;
+  box-shadow: inset 0 0 5px #000000;
 }
 
 .card .name {
-  font-size: larger;
+  font-size: x-large;
   font-weight: bold;
   margin-bottom: 3px;
   margin-top: 5px;
@@ -136,9 +137,25 @@
 }
 
 .pastelBlue {
-  background-color: #B5E9FF;
+  background-color: #B5E9FF !important;
 }
 
 .pastelGreen{
-  background-color: #CDFFD5;
+  background-color: #CDFFD5 !important;
+}
+
+.pastelRed {
+  background-color: #FFB5B5 !important;
+}
+
+.pastelPurple {
+  background-color: #E6C7FF !important;
+}
+
+.pastelYellow {
+  background-color: #FEFFCD !important;
+}
+
+.hidden {
+  display: none;
 }
