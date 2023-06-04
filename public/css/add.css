@@ -1,0 +1,22 @@
+#editAdd {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.logos {
+    overflow-x: auto;
+}
+
+.edit {
+    display: flex;
+    flex-flow: column;
+}
+
+.edit label {
+    font-size: large;
+    font-weight: bold;
+    width: 90%;
+}
