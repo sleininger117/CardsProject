@@ -35,4 +35,9 @@ app.get('/account', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/account.html'));
 })
 
+app.get('/notifications', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/notification.html'));
+})
+
 module.exports = app;
