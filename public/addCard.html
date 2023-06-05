@@ -30,7 +30,11 @@
                             <img class="hidden dc" src="./images/discord.png" width="40">
                             <img class="hidden st" src="./images/steam.png" width="40">
                             <img class="hidden ph" src="./images/phone.png" width="40">
+                            <img class="hidden xb" src="./images/xbox.png" width="40">
+                            <img class="hidden ps" src="./images/playstation.png" width="40">
+                            <img class="hidden ttv" src="./images/twitch.png" width="40">
                         </div>
+                        <img class="colorChange" src="./images/colorPick.png" width="25" onclick="changeColor()">
                     </div>
                     <div class="edit">
                         <label for="name">Card Name</label>
@@ -40,9 +44,69 @@
                         <label for="description">Card Description</label>
                         <input type="text" id="description" name="description" placeholder="Card Description" onkeyup="updateDescription(this)">
                     </div>
-                    <div class="select">
+                    <div class="edit logoEdit">
                         <label for="logoSelect">Add Your Contacts</label>
+                        <div id="logoSelect">
+                            <div class="logoWrap" onclick="toggleLogo(this, 'tt')">
+                                <img class="tt" src="./images/tiktok.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'tb')">
+                                <img class="tb" src="./images/tumblr.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'fb')">
+                                <img class="fb" src="./images/facebook.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'tw')">
+                                <img class="tw" src="./images/twitter.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'gm')">
+                                <img class="gm" src="./images/gmail.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'li')">
+                                <img class="li" src="./images/linkedin.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'gh')">
+                                <img class="gh" src="./images/github.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'sl')">
+                                <img class="sl" src="./images/slack.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'dc')">
+                                <img class="dc" src="./images/discord.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'st')">
+                                <img class="st" src="./images/steam.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'ph')">
+                                <img class="ph" src="./images/phone.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'xb')">
+                                <img class="xb" src="./images/xbox.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'ps')">
+                                <img class="ps" src="./images/playstation.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="logoWrap" onclick="toggleLogo(this, 'ttv')">
+                                <img class="ttv" src="./images/twitch.png" width="60">
+                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                        </div>
                     </div>
+                    <button class="create" onclick="toCards()">Create Card</button>
+                    <button class="cancel" onclick="toCards()">Cancel</button>
                 </main>
                 
             </div>
@@ -56,6 +120,25 @@
         }
         function updateDescription(elm) {
             document.querySelector(".description").textContent = elm.value;
+        }
+        function changeColor() {
+            let card = document.querySelector(".card")
+            const colorList = ["pastelBlue", "pastelGreen", "pastelRed", "pastelPurple", "pastelYellow"]
+            for(let i = 0; i < colorList.length; i++){
+                if(card.classList.contains(colorList[i])){
+                    card.classList.toggle(colorList[i]);
+                    card.classList.add(colorList[(i+1)%colorList.length]);
+                    break;
+                }
+            }
+        }
+        function toCards() {
+            window.location.href = "http://127.0.0.1:3000/cards";
+        }
+        function toggleLogo(element, className){
+            const children = element.children;
+            children[1].classList.toggle("hidden");
+            document.querySelector(".logos ." + className).classList.toggle("hidden");
         }
     </script>
 </html>

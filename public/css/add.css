@@ -8,15 +8,74 @@
 
 .logos {
     overflow-x: auto;
+    height: 60px;
 }
 
 .edit {
     display: flex;
     flex-flow: column;
+    width: 90%;
+    margin-bottom: 10px;
 }
 
 .edit label {
     font-size: large;
     font-weight: bold;
     width: 90%;
+}
+
+.colorChange {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+#logoSelect {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.logoEdit {
+    height: 200px;
+}
+
+.create {
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+    background-color: #7289DA;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.cancel {
+    width: 35%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: large;
+    background-color: #FFB5B5;
+    border-radius: 10px;
+}
+
+.logoWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 80px;
+    position: relative;
+    padding: 10px;
+}
+
+.logoWrap svg {
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    padding-left: 55px;
+    padding-bottom: 75px;
+    background-color: rgba(0, 0, 0, 0.315);
 }

@@ -98,6 +98,7 @@
 }
 
 .card {
+  position: relative;
   padding: 15px;
   width: 85%;
   margin-bottom: 10px;
