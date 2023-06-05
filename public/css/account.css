@@ -1,0 +1,82 @@
+main label {
+    font-weight: bolder;
+}
+
+#accountPage {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+#password {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+#password input{
+    margin-bottom: 10px;
+}
+
+.setPass {
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+    background-color: #7289DA;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+#username {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#email {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.info {
+    margin-right: 10px;
+}
+
+.choice {
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.success {
+    color: #00a100;
+    padding: 10px;
+    background-color: #B5E9FF;
+    border-radius: 10px;
+}
+
+.fail {
+    color: #de0707;
+    padding: 10px;
+    background-color: #B5E9FF;
+    border-radius: 10px;
+}
+
+.logout {
+    border-radius: 10px;
+    background-color: #FFB5B5;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}

@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="./css/home.css">
         <link rel="stylesheet" type="text/css" href="./css/notif.css">
         <link rel="stylesheet" type="text/css" href="./css/nav.css">
+        <link rel="stylesheet" type="text/css" href="./css/account.css">
     </head>
     <body>
         <div class="smartphone">
@@ -15,9 +16,46 @@
                     <div onclick="toAccount()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/><circle cx="12" cy="10" r="3"/><circle cx="12" cy="12" r="10"/></svg></div>
                 </div>
                 <main id="accountPage">
-                    <div class="hmmm">
-                        
+                    <label for="username">Username:</label>
+                    <div id="username">
+                        <p id="displayUser" class="info">sleininger</p>
+                        <input class="hidden" type="text" id="user" placeholder="sleininger">
+                        <div class="hidden choice" onclick="finalUser()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#15895c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <div class="hidden choice" onclick="changeUser()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#de0707" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </div>
+                        <div onclick="changeUser()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line></svg>
+                        </div>
                     </div>
+                    <label for="email">Email:</label>
+                    <div id="email">
+                        <p class="info">sleininger@scu.edu</p>
+                        <input class="hidden" type="text" id="mail" placeholder="sleininger@scu.edu">
+                        <div class="hidden choice" onclick="finalEmail()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#15895c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <div class="hidden choice" onclick="changeEmail()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#de0707" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </div>
+                        <div onclick="changeEmail()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line></svg>
+                        </div>
+                    </div>
+                    <label for="password">Change Password:</label>
+                    <div id="password">
+                        <label for="oldPW">Old Password</label>
+                        <input type="text" id="oldPW" placeholder="Old Password">
+                        <label for="newPW1">New Password</label>
+                        <input type="text" id="newPW1" placeholder="New Password">
+                        <label for="newPW2">Confirm New Password</label>
+                        <input type="text" id="newPW2" placeholder="Confirm New Password">
+                    </div>
+                    <button class="setPass" onclick="setPassword()">Submit</button>
+                    <p id="toast" class="hidden">Error updating password! Please try again</p>
+                    <button class="logout" onclick="toLogin()">Logout</button>
                 </main>
                 <nav>
                     <div onclick="toContacts()">
@@ -51,6 +89,63 @@
         }
         function toAccount(){
             window.location.href = "http://127.0.0.1:3000/account";
+        }
+        function toLogin(){
+            window.location.href = "http://127.0.0.1:3000/";
+        }
+        function setPassword(){
+            const old = document.querySelector("#oldPW");
+            const new1 = document.querySelector("#newPW1");
+            const new2 = document.querySelector("#newPW2");
+            const toast = document.querySelector("#toast");
+            if((old.value === "testPW") && (new1.value === new2.value)){
+                old.value = "";
+                new1.value = "";
+                new2.value = "";
+                toast.textContent = "Password Successfully Changed!";
+                toast.classList.toggle("hidden");
+                toast.classList.toggle("success");
+                setTimeout(toggleToast, 3000);
+            } else {
+                old.value = "";
+                new1.value = "";
+                new2.value = "";
+                toast.textContent = "Error updating password! Please try again.";
+                toast.classList.toggle("hidden");
+                toast.classList.toggle("fail");
+                setTimeout(toggleToast, 3000);
+            }
+        }
+        function toggleToast(){
+            const toast = document.querySelector("#toast");
+            toast.classList.toggle("hidden");
+            if(toast.classList.contains("success")){
+                toast.classList.toggle("success");
+            } else if (toast.classList.contains("fail")){
+                toast.classList.toggle("fail");
+            }
+        }
+        function changeUser(){
+            let items = document.querySelectorAll("#username>*");
+            for(let i = 0; i < items.length; i++){
+                items[i].classList.toggle("hidden");
+            }
+        }
+        function changeEmail(){
+            let items = document.querySelectorAll("#email>*");
+            for(let i = 0; i < items.length; i++){
+                items[i].classList.toggle("hidden");
+            }
+        }
+        function finalUser() {
+            document.querySelector("#displayUser").textContent = document.querySelector("#user").value;
+            document.querySelector("#user").value = "";
+            changeUser();
+        }
+        function finalEmail(){
+            document.querySelector("#email .info").textContent = document.querySelector("#mail").value;
+            document.querySelector("#mail").value = "";
+            changeEmail();
         }
     </script>
 </html>
