@@ -18,3 +18,15 @@
     align-items: center;
     align-content: center;
 }
+
+.card .cardOptions {
+    position: absolute;
+    right: 6%;
+    bottom: 10%;
+}
+
+.editDelete {
+    position: absolute;
+    right: auto;
+    top: auto;
+}

@@ -24,8 +24,16 @@
                             <img src="./images/github.png" width="40">
                             <img src="./images/slack.png" width="40">
                         </div>
-                        <div class="starWrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <div class="starWrapper" onclick="toggleFav(this)">
+                            <svg class="hidden blank" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg class="filled" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <div class="cardOptions" onclick="this.nextSibling.classList.toggle('hidden');">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </div>
+                        <div class="editDelete hidden" onclick="this.classList.toggle('hidden');">
+                            <p class="edit" onclick="toAdd()">Edit Card</p>
+                            <p class="delete" onclick="removeCard(this)">Delete Card</p>
                         </div>
                     </div>
                     <div class="card pastelGreen">
@@ -37,8 +45,9 @@
                             <img src="./images/facebook.png" width="40">
                             <img src="./images/twitter.png" width="40">
                         </div>
-                        <div class="starWrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <div class="starWrapper" onclick="toggleFav(this)">
+                            <svg class="hidden blank" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg class="filled" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
                     </div>
                     <div class="card pastelPurple">
@@ -48,8 +57,9 @@
                             <img src="./images/discord.png" width="40">
                             <img src="./images/steam.png" width="40">
                         </div>
-                        <div class="starWrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <div class="starWrapper" onclick="toggleFav(this)">
+                            <svg class="hidden blank" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg class="filled" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
                     </div>
                     <div class="card pastelRed">
@@ -59,8 +69,9 @@
                             <img src="./images/phone.png" width="40">
                             <img src="./images/gmail.png" width="40">
                         </div>
-                        <div class="starWrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <div class="starWrapper" onclick="toggleFav(this)">
+                            <svg class="hidden blank" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg class="filled" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
                     </div>
                     <button id="addCard" onclick="toAdd()">
@@ -104,7 +115,14 @@
             window.location.href = "http://127.0.0.1:3000/account";
         }
         function removeCard(element) {
-            //
+            element.parent.parent.classList.toggle("hidden");
+            element.parent.classList.toggle("hidden");
+        }
+        function toggleFav(element) {
+            const children = element.children;
+            for(let i = 0; i < children.length; i++){
+                children[i].classList.toggle("hidden");
+            }
         }
     </script>
 </html>
