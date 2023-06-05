@@ -1,0 +1,22 @@
+#notifList {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    overflow-y: auto;
+}
+
+.notification {
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    padding: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px;
+    border-style: outset;
+    border-color: rgba(0, 0, 0, 0.452);
+    text-align: left;
+}
