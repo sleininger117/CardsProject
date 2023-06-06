@@ -69,6 +69,22 @@ app.get('/folders6', (req, res) => {
     res.statusCode = 200;
     res.sendFile(path.join(__dirname, '/public/folders6.html'));
 })
+
+app.get('/folders7', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/folders7.html'));
+})
+
+app.get('/folders8', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/folders8.html'));
+})
+
+app.get('/folders9', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/folders9.html'));
+})
+
 app.get('/addFolder', (req, res) => {
     res.statusCode = 200;
     res.sendFile(path.join(__dirname, '/public/addFolder.html'));
