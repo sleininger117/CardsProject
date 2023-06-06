@@ -27,6 +27,28 @@
 
 .editDelete {
     position: absolute;
-    right: auto;
-    top: auto;
+    width: 50%;
+    right: 80px;
+    top: 20px;
+    background-color: #7289DA;
+    padding: 10px;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 5px #000000;
 }
+
+.darken {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+}
+
+/* .edit {
+    border-bottom: #000000;
+    border-style: solid;
+} */

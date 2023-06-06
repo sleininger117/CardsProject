@@ -99,6 +99,27 @@
                             <p class="delete" onclick="removeCard(this.parentNode)">Delete Card</p>
                         </div>
                     </div>
+                    <div class="card pastelYellow">
+                        <p class="name" id="4">Sean</p>
+                        <p class="description">COEN Student</p>
+                        <div class="logos">
+                            <img class="ph" src="./images/phone.png" width="40">
+                            <img class="gm" src="./images/gmail.png" width="40">
+                            <img class="dc" src="./images/discord.png" width="40">
+                        </div>
+                        <div class="starWrapper" onclick="toggleFav(this)">
+                            <svg class="blank" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg class="hidden filled" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#db9a00" stroke="#db9a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <div class="cardOptions" onclick="showOpt(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                        </div>
+                        <div class="darken hidden" onclick="hideOpt(this)"></div>
+                        <div class="editDelete hidden">
+                            <p class="edit" onclick="toAdd(this.parentNode)">Edit Card</p>
+                            <p class="delete" onclick="removeCard(this.parentNode)">Delete Card</p>
+                        </div>
+                    </div>
                     <button id="addCard" onclick="toAdd()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                     </button>

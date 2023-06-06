@@ -16,17 +16,17 @@
                 </div>
                 <main id="editAdd">
                     <div class="card pastelGreen">
-                        <p class="name">John Filberts</p>
-                        <p class="description">Improv Artist</p>
+                        <p class="name">John C. Filberts</p>
+                        <p class="description">Machine Learning Engineer</p>
                         <div class="logos">
                             <img class="hidden tt" src="./images/tiktok.png" width="40">
                             <img class="hidden tb" src="./images/tumblr.png" width="40">
                             <img class="hidden fb" src="./images/facebook.png" width="40">
                             <img class="hidden tw" src="./images/twitter.png" width="40">
-                            <img class="hidden gm" src="./images/gmail.png" width="40">
-                            <img class="hidden li" src="./images/linkedin.png" width="40">
-                            <img class="hidden gh" src="./images/github.png" width="40">
-                            <img class="hidden sl" src="./images/slack.png" width="40">
+                            <img class=" gm" src="./images/gmail.png" width="40">
+                            <img class=" li" src="./images/linkedin.png" width="40">
+                            <img class=" gh" src="./images/github.png" width="40">
+                            <img class=" sl" src="./images/slack.png" width="40">
                             <img class="hidden dc" src="./images/discord.png" width="40">
                             <img class="hidden st" src="./images/steam.png" width="40">
                             <img class="hidden ph" src="./images/phone.png" width="40">
@@ -65,19 +65,19 @@
                             </div>
                             <div class="logoWrap" onclick="toggleLogo(this, 'gm')">
                                 <img class="gm" src="./images/gmail.png" width="60">
-                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                             </div>
                             <div class="logoWrap" onclick="toggleLogo(this, 'li')">
                                 <img class="li" src="./images/linkedin.png" width="60">
-                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                             </div>
                             <div class="logoWrap" onclick="toggleLogo(this, 'gh')">
                                 <img class="gh" src="./images/github.png" width="60">
-                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                             </div>
                             <div class="logoWrap" onclick="toggleLogo(this, 'sl')">
                                 <img class="sl" src="./images/slack.png" width="60">
-                                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#009a00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                             </div>
                             <div class="logoWrap" onclick="toggleLogo(this, 'dc')">
                                 <img class="dc" src="./images/discord.png" width="60">
@@ -105,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="create" onclick="toCards2()">Create Card</button>
+                    <button class="create" onclick="toCards()">Create Card</button>
                     <button class="cancel" onclick="toCards()">Cancel</button>
                 </main>
                 
@@ -134,9 +134,6 @@
         }
         function toCards() {
             window.location.href = "http://127.0.0.1:3000/cards";
-        }
-        function toCards() {
-            window.location.href = "http://127.0.0.1:3000/cards2";
         }
         function toggleLogo(element, className){
             const children = element.children;

@@ -13,3 +13,9 @@ const server = http.createServer(app);
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+global.cardName = "test";
+global.cardDescription = "";
+global.logos = [];
+global.color = "";
+global.edit = 0;

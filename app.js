@@ -20,10 +20,36 @@ app.get('/cards', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/cards.html'));
 })
 
+app.get('/cards2', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/cards2.html'));
+})
+
 app.get('/addCard', (req, res) => {
     res.statusCode = 200;
     res.sendFile(path.join(__dirname, '/public/addCard.html'));
 })
+
+app.get('/addCard1', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/addCard1.html'));
+})
+
+app.get('/addCard2', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/addCard2.html'));
+})
+
+app.get('/addCard3', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/addCard3.html'));
+})
+
+app.get('/addCard4', (req, res) => {
+    res.statusCode = 200;
+    res.sendFile(path.join(__dirname, '/public/addCard4.html'));
+})
+
 
 app.get('/contacts', (req, res) => {
     res.statusCode = 200;
