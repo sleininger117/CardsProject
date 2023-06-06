@@ -20,7 +20,7 @@ app.get('/cards', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/cards.html'));
 })
 
-app.get('/cards2', (req, res) => {
+app.get('/cardAdded', (req, res) => {
     res.statusCode = 200;
     res.sendFile(path.join(__dirname, '/public/cards2.html'));
 })
